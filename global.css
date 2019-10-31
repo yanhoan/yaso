@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+* {
+	margin:0 auto; padding:0 auto;
+}
+*/
+/*全てのページで適用するcssです*/
+/*bodyタグ*/
+html{
+	font-family: 'Kosugi Maru', sans-serif;
+}
+body {
+	background:#fff none repeat scroll 0 0;
+	color:rgb(255, 128, 64);
+	font-size:12px;
+	line-height:1.5;
+
+	margin:0px;
+
+	padding:0;
+	font-family:verdana,arial,helvetica,sans-serif;
+
+}
+header{
+	/*重なりの優先順位は一番上に持ってきたいので
+	slidebars.cssのoverlayよりも値を1増やしています。*/
+	position:relative;
+	z-index:10000;
+	font-size: 30px;
+	color:rgb(255, 128, 64);
+	background-color: rgb(253, 238, 191);
+	font-family:cursive;
+}
+/**/
+.clearfix:after {
+	content:".";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear:both;
+}
+.clearfix {
+	display:inline-block;
+}
+.wrapper{
+	height: 1500px;
+}
+.main-content{
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	display: flex;
+}
+.menu{
+	width:auto;
+	height:100%;
+	float:left;
+	padding:5px;
+}
+.maindiv {
+	display: inline-block;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.iframe1{
+	border: 0;
+	overflow:hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+	width : 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+/*リンクの色設定*/
+a{
+	/*リンクの下線*/
+	text-decoration:none;
+}
+a:link,a:hover,a:active{
+	color:rgb(255, 128, 64)
+}
+a:visited{
+	color:rgb(200, 128, 64)
+
+}
